@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anime Clothing Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      background: #1e1e1e;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid orange;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: orange;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 2em;
+    }
+    .card {
+      background: #1c1c1c;
+      padding: 1em;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255,165,0,0.2);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      pointer-events: none;
+    }
+    .info {
+      margin-top: 0.5em;
+    }
+    .info h2 {
+      font-size: 1.1em;
+      margin: 0.3em 0;
+    }
+    .info p {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    .price {
+      color: #00ff99;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .btn {
+      margin-top: 0.5em;
+      padding: 0.4em 1em;
+      background: orange;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #ffa500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Anime Clothing</h1>
+    <div>🛒 Cart (0)</div>
+  </header>
+  <section class="products">
+
+    <div class="card">
+      <img src="https://i.imgur.com/FnVfTGl.jpg" alt="Naruto - Uchiha Flame Tee">
+      <div class="info">
+        <h2>Naruto - Uchiha Flame Tee</h2>
+        <p>Black tee with Uchiha clan symbol.</p>
+        <div class="price">₹799</div>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="https://i.imgur.com/N3vKrl3.jpg" alt="Naruto - Hokage Shirt">
+      <div class="info">
+        <h2>Naruto - Hokage Shirt</h2>
+        <p>White shirt inspired by the 7th Hokage.</p>
+        <div class="price">₹699</div>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="https://i.imgur.com/MfN4iHN.jpg" alt="Dragon Ball - Goku SSJ Tee">
+      <div class="info">
+        <h2>Dragon Ball - Goku SSJ Tee</h2>
+        <p>T-shirt with Super Saiyan Goku print.</p>
+        <div class="price">₹999</div>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="https://i.imgur.com/TvUqsnZ.jpg" alt="Dragon Ball - Capsule Corp Tee">
+      <div class="info">
+        <h2>Dragon Ball - Capsule Corp Tee</h2>
+        <p>Classic black Capsule Corp shirt.</p>
+        <div class="price">₹500</div>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="https://i.imgur.com/m79IBYZ.jpg" alt="One Piece - Straw Hat Tee">
+      <div class="info">
+        <h2>One Piece - Straw Hat Tee</h2>
+        <p>Red tee with Monkey D. Luffy design.</p>
+        <div class="price">₹899</div>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+    
+  </section>
+</body>
+</html>
